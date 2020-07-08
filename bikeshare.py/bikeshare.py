@@ -19,6 +19,24 @@ def get_filters():
     print('\nHello! Let\'s explore some US bikeshare data!')
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
 
+def get_month():
+    '''Asks the user for a month and returns the specified month.
+    Args:
+        none.
+    Returns:
+        (tuple) Lower limit, upper limit of month for the bikeshare data.
+    '''
+    month_input = ''
+    months_dict = {'january': 1, 'february': 2, 'march': 3, 'april': 4,
+                   'may': 5, 'june': 6}
+    while month_input.lower() not in months_dict.keys():
+        month_input = input('\nWhich month? January, February, March, April,'
+                            ' May, or June?\n')
+        if month_input.lower() not in months_dict.keys():
+            print('Sorry, I do not understand your input. Please type in a '
+                  'month between January and June')
+    month = months_dict[month_input.lower()]
+    return ('2017-{}'.format(month), '2017-{}'.format(month + 1))
 
     while True:
       city = input("\nWhich city would you like to filter by? New York City, Chicago or Washington?\n")
