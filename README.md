@@ -1,15 +1,8 @@
-### Date created
-Include the date you created this project and README file.
+initial commit README.md
+Using python to analyze bikeshare ridership data from three US cities.
+ An assigned project from Udacity Data Analysis Nanodegree term 1.
 
-### Project Title
-Replace the Project Title
-
-### Description
-Describe what your project is about and what it does
-
-### Files used
-Include the files used
-
-### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+Throughout this project I did a lot of googling and used various little pieces of
+code from places like stackexchange. E.g. how to convert seconds into hours, minutes,
+and seconds
+code from places like stackexchange, the python documentation, and quora.
